@@ -1,19 +1,15 @@
 <?php
 
-require 'Task.php';
-require 'functions.php';
+$query = require 'bootstrap.php';
 
 
 
 
 
+$tasks = $query->selectAll('todos');
 
 
 
-$pdo = connectToDb();
-
-
-$tasks = fetchAllTasks($pdo);
 
 
 require 'index.view.php';
