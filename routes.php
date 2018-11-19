@@ -2,15 +2,19 @@
 
 
 
-$router->get('', 'controllers/index.php');
+$router->get('', 'PagesController@home');
 
-$router->get('about', 'controllers/about.php');
+$router->get('about', 'PagesController@about');
 
-$router->get('about/culture', 'controllers/about-culture.php');
+$router->get('contact', 'PagesController@contact');
 
-$router->get('contact', 'controllers/contact.php');
+$router->get('users', 'UsersController@index');
 
-$router->post('names', 'controllers/add-name.php');
+$router->post('users', 'UsersController@store');
+
+//$router->get('about/culture', 'controllers/about-culture.php');
+//
+//$router->post('names', 'controllers/add-name.php');
 
 
 
