@@ -1,5 +1,5 @@
-# PhpFramework
-Creating my own PHP based MVC framework.
+# PHP MVC App
+
 
 Starting up: Git clone directory.
 
